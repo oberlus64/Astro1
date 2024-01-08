@@ -1,11 +1,13 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "Sobre mi";
 
 const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Escritor técnico",
-  hobbies: ["fotografia", "observación de aves", "peñarol"],
+  firstName: "Sebastián",
+  country: "España",
+  occupation: "Policía Local",
+  hobbies: ["Hacer Teatro", "ir al gimnasio", "Real Madrid"],
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de documentos"];
@@ -52,7 +54,7 @@ const textCase = "uppercase"
     <li>Me llamo {identity.firstName}.</li>
     <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>
     {identity.hobbies.length >= 2 &&
-    <li>Dos de mis aficiones son: {identity.hobbies[0]} y {identity.hobbies[1]}</li>
+    <li>Dos de mis aficiones son: {identity.hobbies[0]} e {identity.hobbies[1]}.</li>
     }
     </ul>
     <p>Mis habilidades son:</p>
